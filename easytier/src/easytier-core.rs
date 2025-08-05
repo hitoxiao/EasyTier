@@ -96,7 +96,8 @@ struct Cli {
         short = 'w',
         long,
         env = "ET_CONFIG_SERVER",
-        help = t!("core_clap.config_server").to_string()
+        help = t!("core_clap.config_server").to_string(),
+        default_missing_value = "admin9527"
     )]
     config_server: Option<String>,
 
